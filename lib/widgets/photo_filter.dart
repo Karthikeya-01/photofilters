@@ -16,7 +16,7 @@ class PhotoFilter extends StatelessWidget {
 
   PhotoFilter({
     required this.image,
-    required this.filename,
+    this.filename,
     required this.filter,
     this.fit = BoxFit.fill,
     this.loader = const Center(child: CircularProgressIndicator()),
@@ -65,10 +65,10 @@ class PhotoFilterSelector extends StatefulWidget {
 
   const PhotoFilterSelector({
     Key? key,
-    required this.title,
+    this.title,
     required this.filters,
     required this.image,
-    this.appBarColor = Colors.blue,
+    this.appBarColor = Colors.transparent,
     this.loader = const Center(child: CircularProgressIndicator()),
     this.fit = BoxFit.fill,
     required this.filename,
