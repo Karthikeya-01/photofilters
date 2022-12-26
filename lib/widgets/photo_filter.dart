@@ -71,7 +71,7 @@ class PhotoFilterSelector extends StatefulWidget {
     this.appBarColor = Colors.transparent,
     this.loader = const Center(child: CircularProgressIndicator()),
     this.fit = BoxFit.fill,
-    required this.filename,
+    this.filename,
     this.circleShape = false,
   }) : super(key: key);
 
